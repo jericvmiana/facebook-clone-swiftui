@@ -16,6 +16,8 @@
 		19CF3CF82AF5115A00F21E87 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CF72AF5115900F21E87 /* CreatePostView.swift */; };
 		19CF3CFA2AF5116400F21E87 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CF92AF5116400F21E87 /* ReelsView.swift */; };
 		19CF3CFC2AF511A400F21E87 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CFB2AF511A400F21E87 /* PostView.swift */; };
+		19CF3D002AF518F900F21E87 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CFF2AF518F900F21E87 /* FriendsView.swift */; };
+		19CF3D022AF5292300F21E87 /* FriendRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3D012AF5292300F21E87 /* FriendRequestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		19CF3CF72AF5115900F21E87 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		19CF3CF92AF5116400F21E87 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		19CF3CFB2AF511A400F21E87 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		19CF3CFF2AF518F900F21E87 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		19CF3D012AF5292300F21E87 /* FriendRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,8 @@
 		19CF3CDB2AF4EAA000F21E87 /* FacebookCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				19CF3CFE2AF518E800F21E87 /* Screens */,
 				19CF3CF32AF4FBCA00F21E87 /* Utils */,
-				19CF3CF02AF4F10100F21E87 /* Home */,
 				19CF3CDC2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift */,
 				19CF3CDE2AF4EAA000F21E87 /* ContentView.swift */,
 				19CF3CE02AF4EAA200F21E87 /* Assets.xcassets */,
@@ -96,6 +100,24 @@
 				19CF3CF42AF4FBD500F21E87 /* MockData.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		19CF3CFD2AF518DF00F21E87 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				19CF3CFF2AF518F900F21E87 /* FriendsView.swift */,
+				19CF3D012AF5292300F21E87 /* FriendRequestCell.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		19CF3CFE2AF518E800F21E87 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				19CF3CF02AF4F10100F21E87 /* Home */,
+				19CF3CFD2AF518DF00F21E87 /* Friends */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +192,9 @@
 			files = (
 				19CF3CFC2AF511A400F21E87 /* PostView.swift in Sources */,
 				19CF3CF82AF5115A00F21E87 /* CreatePostView.swift in Sources */,
+				19CF3D002AF518F900F21E87 /* FriendsView.swift in Sources */,
 				19CF3CF22AF4F10C00F21E87 /* HomeView.swift in Sources */,
+				19CF3D022AF5292300F21E87 /* FriendRequestCell.swift in Sources */,
 				19CF3CF52AF4FBD500F21E87 /* MockData.swift in Sources */,
 				19CF3CDF2AF4EAA000F21E87 /* ContentView.swift in Sources */,
 				19CF3CFA2AF5116400F21E87 /* ReelsView.swift in Sources */,

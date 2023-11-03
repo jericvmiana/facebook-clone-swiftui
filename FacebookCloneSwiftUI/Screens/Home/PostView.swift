@@ -32,18 +32,21 @@ struct PostView: View {
                 }
                 
                 Spacer()
-                HStack(spacing: 20) {
-                  
-                    Image(systemName: "ellipsis")
-                        .resizable()
-                        .frame(width: 20, height: 4)
-                    Image(systemName: "xmark")
-                        .resizable()
-                        .frame(width: 10, height: 10)
+                HStack(spacing: 10) {
+                    Button("", systemImage: "ellipsis") {
+                        
+                    }
+                    .frame(width: 30, height: 30)
+
+                    Button("", systemImage: "xmark") {
+                        
+                    }
+                    .frame(width: 30, height: 30)
                 }
+                .foregroundStyle(.black.opacity(0.6))
             }
-            .foregroundStyle(.gray)
-            .padding(10)
+            .padding([.top, .leading, .bottom], 10)
+            .padding(.trailing, 5)
             
             Image(MockData().randomImage)
                 .resizable()

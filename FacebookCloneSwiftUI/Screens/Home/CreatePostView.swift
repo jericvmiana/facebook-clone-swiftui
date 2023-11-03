@@ -20,6 +20,7 @@ struct CreatePostView: View {
             Image(systemName: "photo.fill.on.rectangle.fill")
                 .resizable()
                 .frame(width: 25, height: 25)
+                .foregroundStyle(.green)
         }
         .padding([.top, .leading, .trailing])
         .padding(.bottom, 5)

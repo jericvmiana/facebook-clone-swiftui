@@ -14,6 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "house")
                 }
+            FriendsView()
+                .tabItem {
+                    Image(systemName: "person.2.fill")
+                }
         }
     }
 }
