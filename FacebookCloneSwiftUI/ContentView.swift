@@ -15,7 +15,6 @@ struct ContentView: View {
                     Image(systemName: "house")
                 }
         }
-    
     }
 }
 
