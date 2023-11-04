@@ -19,7 +19,7 @@ struct NotificationCell: View {
                     Text(MockData().randomName)
                         .font(.subheadline)
                         .bold()
-                    Text(MockData().randomCaption)
+                    Text(MockData().description)
                         .font(.subheadline)
                         .lineLimit(2)
                     Text(MockData().randomHourValue)

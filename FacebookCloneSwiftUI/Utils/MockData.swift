@@ -28,15 +28,32 @@ struct MockData {
         return groups.randomElement()!
     }
     
-    var randomCaption: String {
-        let captions = [
+    var description: String {
+        let descriptions = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         ]
+        return descriptions.randomElement()!
+    }
+    
+    var randomPostCaption: String {
+        let captions = [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "",
+            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur..",
+            ""
+        ]
         return captions.randomElement()!
     }
+    
+    var randomPostImage: String {
+        let images = ["church", "", "cinema", "desert", "plant", "", "road", "steak", "tokyo", "trees", ""]
+        return images.randomElement()!
+    }
+    
     var randomPrice: String {
         let prices = ["P1,000", "P1,500", "P2,000", "P2,500", "P3,000", "P3,500", "P4,000", "P4,500"]
         return prices.randomElement()!

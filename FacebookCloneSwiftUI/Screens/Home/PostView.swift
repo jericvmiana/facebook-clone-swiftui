@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PostView: View {
+    private let image = MockData().randomPostImage
+    private let caption = MockData().randomPostCaption
+    
     var body: some View {
         VStack {
             HStack(spacing: 10) {
@@ -48,9 +51,20 @@ struct PostView: View {
             .padding([.top, .leading, .bottom], 10)
             .padding(.trailing, 5)
             
-            Image(MockData().randomImage)
-                .resizable()
-                .frame(height: 350)
+            VStack(alignment: .leading) {
+                if !caption.isEmpty {
+                    Text(caption)
+                        .font(.subheadline)
+                        .padding([.leading, .trailing])
+                        .padding(.bottom, 5)
+                }
+                
+                if !image.isEmpty {
+                    Image(image)
+                        .resizable()
+                        .frame(height: 350)
+                }
+            }
 
             HStack {
                 Button {

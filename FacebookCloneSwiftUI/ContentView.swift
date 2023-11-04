@@ -22,6 +22,10 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "storefront")
                 }
+            NotificationsView()
+                .tabItem {
+                    Image(systemName: "bell")
+                }
         }
     }
 }

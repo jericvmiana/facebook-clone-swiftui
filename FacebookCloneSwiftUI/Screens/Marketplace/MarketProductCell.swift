@@ -17,7 +17,7 @@ struct MarketProductCell: View {
             Text(MockData().randomPrice)
                 .font(.system(.subheadline, weight: .semibold))
                 .lineLimit(1)
-            Text(MockData().randomCaption)
+            Text(MockData().description)
                 .font(.system(.subheadline))
                 .lineLimit(2)
                 .foregroundStyle(.secondary)
