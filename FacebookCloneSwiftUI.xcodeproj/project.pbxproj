@@ -10,6 +10,8 @@
 		1938F65D2AF5F4390090E36F /* MarketplaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F65C2AF5F4390090E36F /* MarketplaceView.swift */; };
 		1938F65F2AF5F4E80090E36F /* HeaderCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F65E2AF5F4E80090E36F /* HeaderCategoriesView.swift */; };
 		1938F6612AF616810090E36F /* MarketProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6602AF616810090E36F /* MarketProductCell.swift */; };
+		1938F6642AF617EF0090E36F /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6632AF617EF0090E36F /* NotificationsView.swift */; };
+		1938F6662AF619B20090E36F /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6652AF619B20090E36F /* NotificationCell.swift */; };
 		19CF3CDD2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CDC2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift */; };
 		19CF3CDF2AF4EAA000F21E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CDE2AF4EAA000F21E87 /* ContentView.swift */; };
 		19CF3CE12AF4EAA200F21E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CF3CE02AF4EAA200F21E87 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		1938F65C2AF5F4390090E36F /* MarketplaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceView.swift; sourceTree = "<group>"; };
 		1938F65E2AF5F4E80090E36F /* HeaderCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCategoriesView.swift; sourceTree = "<group>"; };
 		1938F6602AF616810090E36F /* MarketProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketProductCell.swift; sourceTree = "<group>"; };
+		1938F6632AF617EF0090E36F /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		1938F6652AF619B20090E36F /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		19CF3CD92AF4EAA000F21E87 /* FacebookCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CF3CDC2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCloneSwiftUIApp.swift; sourceTree = "<group>"; };
 		19CF3CDE2AF4EAA000F21E87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 				1938F6602AF616810090E36F /* MarketProductCell.swift */,
 			);
 			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		1938F6622AF617E40090E36F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				1938F6632AF617EF0090E36F /* NotificationsView.swift */,
+				1938F6652AF619B20090E36F /* NotificationCell.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		19CF3CD02AF4EAA000F21E87 = {
@@ -130,6 +143,7 @@
 		19CF3CFE2AF518E800F21E87 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1938F6622AF617E40090E36F /* Notifications */,
 				1938F65B2AF5F42F0090E36F /* Marketplace */,
 				19CF3CF02AF4F10100F21E87 /* Home */,
 				19CF3CFD2AF518DF00F21E87 /* Friends */,
@@ -213,10 +227,12 @@
 				1938F65D2AF5F4390090E36F /* MarketplaceView.swift in Sources */,
 				19CF3D002AF518F900F21E87 /* FriendsView.swift in Sources */,
 				19CF3CF22AF4F10C00F21E87 /* HomeView.swift in Sources */,
+				1938F6662AF619B20090E36F /* NotificationCell.swift in Sources */,
 				19CF3D022AF5292300F21E87 /* FriendRequestCell.swift in Sources */,
 				1938F6612AF616810090E36F /* MarketProductCell.swift in Sources */,
 				19CF3CF52AF4FBD500F21E87 /* MockData.swift in Sources */,
 				19CF3CDF2AF4EAA000F21E87 /* ContentView.swift in Sources */,
+				1938F6642AF617EF0090E36F /* NotificationsView.swift in Sources */,
 				19CF3CFA2AF5116400F21E87 /* ReelsView.swift in Sources */,
 				19CF3CDD2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift in Sources */,
 			);
