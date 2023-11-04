@@ -37,6 +37,10 @@ struct MockData {
         ]
         return captions.randomElement()!
     }
+    var randomPrice: String {
+        let prices = ["P1,000", "P1,500", "P2,000", "P2,500", "P3,000", "P3,500", "P4,000", "P4,500"]
+        return prices.randomElement()!
+    }
     
     var randomHourValue: String {
         let hours = ["1h", "2h", "3h", "4h", "5h", "6h"]

@@ -15,7 +15,7 @@ struct HeaderButton {
 
 struct FriendsView: View {
     
-    let headerButtons = [
+    private let headerButtons = [
         HeaderButton(title: "Suggestion", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
         HeaderButton(title: "Your friends", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
     ]
@@ -23,27 +23,7 @@ struct FriendsView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(headerButtons, id: \.title) { headerButton in
-                            Button {
-                                
-                            } label: {
-                                Text(headerButton.title)
-                                    .font(.system(size: 15, weight: .semibold))
-                                    .padding([.leading, .trailing])
-                                    .padding([.top, .bottom], 10)
-                                    .foregroundStyle(headerButton.foregroundColor)
-                                    .background(
-                                        Capsule()
-                                            .fill(headerButton.backgroundColor.opacity(0.15))
-                                    )
-                            }
-                        }
-                    }
-                }
-                .scrollIndicators(.hidden)
-                .contentMargins(10, for: .scrollContent)
+                HeaderCategoriesView(headerButtons: headerButtons)
                 
                 Divider()
                 

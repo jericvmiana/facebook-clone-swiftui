@@ -18,6 +18,10 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "person.2.fill")
                 }
+            MarketplaceView()
+                .tabItem {
+                    Image(systemName: "storefront")
+                }
         }
     }
 }
