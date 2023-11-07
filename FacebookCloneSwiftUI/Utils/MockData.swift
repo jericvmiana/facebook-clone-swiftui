@@ -19,13 +19,40 @@ struct MockData {
     }
     
     var randomName: String {
-        let strings = ["Steve Jobs", "Paul Hudson", "Sean Allen", "XCode", "React"]
+        let strings = ["Steve Jobs", "Paul Hudson", "Sean Allen", "XCode", "React Native", "Flutter", "NextJS"]
         return strings.randomElement()!
     }
     
     var randomGroupName: String {
         let groups = ["XCode", "SwiftUI", "Swift", "Apple", "WWDC 2023"]
         return groups.randomElement()!
+    }
+    
+    var shortcuts: [ButtonModel] {
+        return [
+            ButtonModel(name: "Groups", icon: "person.3.sequence.fill"),
+            ButtonModel(name: "Feeds", icon: "printer.dotmatrix.fill"),
+            ButtonModel(name: "Friends", icon: "person.2.fill"),
+            ButtonModel(name: "Explore People", icon: "person.2.fill"),
+            ButtonModel(name: "Marketplace", icon: "storefront.fill"),
+            ButtonModel(name: "Video", icon: "video.circle.fill"),
+            ButtonModel(name: "Memories", icon: "memories.badge.plus"),
+            ButtonModel(name: "Saved", icon: "bookmark.fill"),
+            ButtonModel(name: "Professional dashboard", icon: "chart.bar.xaxis"),
+            ButtonModel(name: "Creator Support", icon: "person.circle.fill"),
+            ButtonModel(name: "Pages", icon: "flag.fill"),
+            ButtonModel(name: "Ad Center", icon: "horn.fill"),
+            ButtonModel(name: "Events", icon: "calendar.circle.fill"),
+            ButtonModel(name: "Reels", icon: "scissors"),
+        ]
+    }
+    
+    var settings: [ButtonModel] {
+        return [
+            ButtonModel(name: "Settings & privacy", icon: "gearshape.fill"),
+            ButtonModel(name: "Help & support", icon: "questionmark.circle.fill"),
+            ButtonModel(name: "Display & accessibility", icon: "moon.circle.fill"),
+        ]
     }
     
     var description: String {
@@ -50,7 +77,7 @@ struct MockData {
     }
     
     var randomPostImage: String {
-        let images = ["church", "", "cinema", "desert", "plant", "", "road", "steak", "tokyo", "trees", ""]
+        let images = ["bike", "church", "", "cinema", "desert", "dog", "house", "plant", "", "road", "steak", "tokyo", "trees", ""]
         return images.randomElement()!
     }
     
@@ -63,4 +90,10 @@ struct MockData {
         let hours = ["1h", "2h", "3h", "4h", "5h", "6h"]
         return hours.randomElement()!
     }
+}
+
+struct ButtonModel: Identifiable {
+    var id = UUID()
+    let name: String
+    let icon: String
 }

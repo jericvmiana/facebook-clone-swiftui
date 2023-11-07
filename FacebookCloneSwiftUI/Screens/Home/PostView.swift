@@ -12,7 +12,7 @@ struct PostView: View {
     private let caption = MockData().randomPostCaption
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack(spacing: 10) {
                 Image(MockData().randomProfileImage)
                     .resizable()
@@ -62,7 +62,9 @@ struct PostView: View {
                 if !image.isEmpty {
                     Image(image)
                         .resizable()
-                        .frame(height: 350)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: UIScreen.main.bounds.width, height: 350)
+                        .clipped()
                 }
             }
 
@@ -86,7 +88,6 @@ struct PostView: View {
                         .font(.system(size: 13, weight: .semibold))
                 }
             
-
                 Spacer()
                 Button {
                 } label: {

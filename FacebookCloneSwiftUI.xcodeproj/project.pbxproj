@@ -12,6 +12,11 @@
 		1938F6612AF616810090E36F /* MarketProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6602AF616810090E36F /* MarketProductCell.swift */; };
 		1938F6642AF617EF0090E36F /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6632AF617EF0090E36F /* NotificationsView.swift */; };
 		1938F6662AF619B20090E36F /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6652AF619B20090E36F /* NotificationCell.swift */; };
+		1938F6692AF625E00090E36F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6682AF625E00090E36F /* MenuView.swift */; };
+		1938F66B2AF879820090E36F /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F66A2AF879820090E36F /* MenuHeader.swift */; };
+		1938F66F2AF89C5A0090E36F /* GroupShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F66E2AF89C5A0090E36F /* GroupShortcuts.swift */; };
+		1938F6712AF89C7E0090E36F /* AllShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938F6702AF89C7E0090E36F /* AllShortcuts.swift */; };
+		1955CFE22AF8DAE100148BEE /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1955CFE12AF8DAE100148BEE /* SettingsCell.swift */; };
 		19CF3CDD2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CDC2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift */; };
 		19CF3CDF2AF4EAA000F21E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3CDE2AF4EAA000F21E87 /* ContentView.swift */; };
 		19CF3CE12AF4EAA200F21E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CF3CE02AF4EAA200F21E87 /* Assets.xcassets */; };
@@ -31,6 +36,11 @@
 		1938F6602AF616810090E36F /* MarketProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketProductCell.swift; sourceTree = "<group>"; };
 		1938F6632AF617EF0090E36F /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		1938F6652AF619B20090E36F /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		1938F6682AF625E00090E36F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		1938F66A2AF879820090E36F /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
+		1938F66E2AF89C5A0090E36F /* GroupShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupShortcuts.swift; sourceTree = "<group>"; };
+		1938F6702AF89C7E0090E36F /* AllShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllShortcuts.swift; sourceTree = "<group>"; };
+		1955CFE12AF8DAE100148BEE /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		19CF3CD92AF4EAA000F21E87 /* FacebookCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CF3CDC2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCloneSwiftUIApp.swift; sourceTree = "<group>"; };
 		19CF3CDE2AF4EAA000F21E87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +84,18 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		1938F6672AF625D80090E36F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1938F6682AF625E00090E36F /* MenuView.swift */,
+				1938F66A2AF879820090E36F /* MenuHeader.swift */,
+				1938F66E2AF89C5A0090E36F /* GroupShortcuts.swift */,
+				1938F6702AF89C7E0090E36F /* AllShortcuts.swift */,
+				1955CFE12AF8DAE100148BEE /* SettingsCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		19CF3CD02AF4EAA000F21E87 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +115,11 @@
 		19CF3CDB2AF4EAA000F21E87 /* FacebookCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				19CF3CFE2AF518E800F21E87 /* Screens */,
-				19CF3CF32AF4FBCA00F21E87 /* Utils */,
+				19CF3CE02AF4EAA200F21E87 /* Assets.xcassets */,
 				19CF3CDC2AF4EAA000F21E87 /* FacebookCloneSwiftUIApp.swift */,
 				19CF3CDE2AF4EAA000F21E87 /* ContentView.swift */,
-				19CF3CE02AF4EAA200F21E87 /* Assets.xcassets */,
+				19CF3CFE2AF518E800F21E87 /* Screens */,
+				19CF3CF32AF4FBCA00F21E87 /* Utils */,
 				19CF3CE22AF4EAA200F21E87 /* Preview Content */,
 			);
 			path = FacebookCloneSwiftUI;
@@ -143,10 +165,11 @@
 		19CF3CFE2AF518E800F21E87 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1938F6622AF617E40090E36F /* Notifications */,
-				1938F65B2AF5F42F0090E36F /* Marketplace */,
 				19CF3CF02AF4F10100F21E87 /* Home */,
 				19CF3CFD2AF518DF00F21E87 /* Friends */,
+				1938F65B2AF5F42F0090E36F /* Marketplace */,
+				1938F6622AF617E40090E36F /* Notifications */,
+				1938F6672AF625D80090E36F /* Menu */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -223,14 +246,19 @@
 			files = (
 				19CF3CFC2AF511A400F21E87 /* PostView.swift in Sources */,
 				19CF3CF82AF5115A00F21E87 /* CreatePostView.swift in Sources */,
+				1938F6712AF89C7E0090E36F /* AllShortcuts.swift in Sources */,
 				1938F65F2AF5F4E80090E36F /* HeaderCategoriesView.swift in Sources */,
 				1938F65D2AF5F4390090E36F /* MarketplaceView.swift in Sources */,
 				19CF3D002AF518F900F21E87 /* FriendsView.swift in Sources */,
 				19CF3CF22AF4F10C00F21E87 /* HomeView.swift in Sources */,
 				1938F6662AF619B20090E36F /* NotificationCell.swift in Sources */,
+				1938F66F2AF89C5A0090E36F /* GroupShortcuts.swift in Sources */,
 				19CF3D022AF5292300F21E87 /* FriendRequestCell.swift in Sources */,
 				1938F6612AF616810090E36F /* MarketProductCell.swift in Sources */,
+				1938F66B2AF879820090E36F /* MenuHeader.swift in Sources */,
 				19CF3CF52AF4FBD500F21E87 /* MockData.swift in Sources */,
+				1955CFE22AF8DAE100148BEE /* SettingsCell.swift in Sources */,
+				1938F6692AF625E00090E36F /* MenuView.swift in Sources */,
 				19CF3CDF2AF4EAA000F21E87 /* ContentView.swift in Sources */,
 				1938F6642AF617EF0090E36F /* NotificationsView.swift in Sources */,
 				19CF3CFA2AF5116400F21E87 /* ReelsView.swift in Sources */,

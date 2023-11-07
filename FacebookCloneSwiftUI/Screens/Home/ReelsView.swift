@@ -12,7 +12,7 @@ struct ReelsView: View {
             ZStack(alignment: .leading) {
                 Image(MockData().randomImage)
                     .resizable()
-                    .scaledToFill()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 100)
                     .clipShape(.rect(cornerRadius: 7))
 

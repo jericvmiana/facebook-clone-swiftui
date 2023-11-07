@@ -26,6 +26,10 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "bell")
                 }
+            MenuView()
+                .tabItem {
+                    Image(systemName: "line.3.horizontal.decrease")
+                }
         }
     }
 }
