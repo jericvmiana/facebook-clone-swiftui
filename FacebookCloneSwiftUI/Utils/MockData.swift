@@ -9,17 +9,12 @@ import Foundation
 
 struct MockData {
     var randomImage: String {
-        let images = ["church", "cinema", "desert", "plant", "road", "steak", "tokyo", "trees"]
-        return images.randomElement()!
-    }
-    
-    var randomProfileImage: String {
-        let images = ["steve-jobs", "sean-allen", "paul-hudson", "xcode", "react"]
+        let images = ["bike", "church", "cinema", "desert", "dog", "dollars", "house", "jobstreet", "linkedin", "macbook", "museum", "plant", "road", "robot", "steak", "tokyo", "trees"]
         return images.randomElement()!
     }
     
     var randomName: String {
-        let strings = ["Steve Jobs", "Paul Hudson", "Sean Allen", "XCode", "React Native", "Flutter", "NextJS"]
+        let strings = ["Steve Jobs", "Paul Hudson", "Sean Allen", "XCode", "React Native", "Flutter", "NextJS", "Netflix", "Instagram", "Spotify", "TikTok"]
         return strings.randomElement()!
     }
     

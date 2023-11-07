@@ -14,7 +14,7 @@ struct PostView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 10) {
-                Image(MockData().randomProfileImage)
+                Image(MockData().randomImage)
                     .resizable()
                     .frame(width: 40, height: 40)
                     .clipShape(.circle)

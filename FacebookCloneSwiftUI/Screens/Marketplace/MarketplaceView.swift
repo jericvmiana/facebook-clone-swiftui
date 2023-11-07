@@ -9,8 +9,9 @@ import SwiftUI
 
 struct MarketplaceView: View {
     private let headerButtons = [
-        HeaderButton(title: "Suggestion", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
-        HeaderButton(title: "Your friends", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
+        HeaderButton(title: "Sell", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
+        HeaderButton(title: "For you", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
+        HeaderButton(title: "Categories", backgroundColor: .gray, foregroundColor: .black.opacity(0.7)),
     ]
     
     private let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)

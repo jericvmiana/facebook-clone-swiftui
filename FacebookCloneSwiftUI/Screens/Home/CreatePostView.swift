@@ -10,7 +10,7 @@ import SwiftUI
 struct CreatePostView: View {
     var body: some View {
         HStack {
-            Image(MockData().randomProfileImage)
+            Image(MockData().randomImage)
                 .resizable()
                 .frame(width: 40, height: 40)
                 .clipShape(.circle)

@@ -17,7 +17,7 @@ struct ReelsView: View {
                     .clipShape(.rect(cornerRadius: 7))
 
                 VStack(alignment: .leading) {
-                    Image(MockData().randomProfileImage)
+                    Image(MockData().randomImage)
                         .resizable()
                         .frame(width: 30, height: 30)
                         .clipShape(.circle)

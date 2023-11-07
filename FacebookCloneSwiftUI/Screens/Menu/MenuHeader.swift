@@ -11,7 +11,7 @@ struct MenuHeader: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image(MockData().randomProfileImage)
+                Image(MockData().randomImage)
                     .resizable()
                     .frame(width: 30, height: 30)
                     .clipShape(.circle)

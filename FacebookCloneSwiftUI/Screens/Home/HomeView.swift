@@ -42,13 +42,23 @@ struct HomeView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     HStack(spacing: 20) {
-                        Image(systemName: "plus")
-                            .foregroundStyle(.black)
-                        Image(systemName: "magnifyingglass")
-                            .foregroundStyle(.black)
-                        Image(systemName: "message")
-                            .foregroundStyle(.black)
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "plus")
+                        }
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "magnifyingglass")
+                        }
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "message")
+                        }
                     }
+                    .foregroundStyle(.primary)
                 }
             }
         }

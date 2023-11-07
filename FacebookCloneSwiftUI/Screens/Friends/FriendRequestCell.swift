@@ -10,7 +10,7 @@ import SwiftUI
 struct FriendRequestCell: View {
     var body: some View {
         HStack {
-            Image(MockData().randomProfileImage)
+            Image(MockData().randomImage)
                 .resizable()
                 .frame(width: 75, height: 75)
                 .clipShape(.circle)
@@ -28,12 +28,12 @@ struct FriendRequestCell: View {
                         .foregroundStyle(.gray)
                 }
                 HStack(spacing: 0) {
-                    Image(MockData().randomProfileImage)
+                    Image(MockData().randomImage)
                         .resizable()
                         .frame(width: 15, height: 15)
                         .clipShape(.circle)
                         .zIndex(1)
-                    Image(MockData().randomProfileImage)
+                    Image(MockData().randomImage)
                         .resizable()
                         .frame(width: 15, height: 15)
                         .clipShape(.circle)
